@@ -1,8 +1,8 @@
 # AI Tool Explorer
 
-# 🧑‍💻 Frontend Assignment: AI Tool Explorer using Replicate API
+# Frontend Assignment: AI Tool Explorer using Replicate API
 
-## 🎯 Objective
+##  Objective
 
 Create a **Next.js frontend application** where users can:
 - Browse and select AI models (from Replicate)
@@ -14,7 +14,7 @@ This assignment is designed to test your **Next.js architecture**, **state handl
 
 ---
 
-## 🧠 What You’ll Be Evaluated On
+##  What You’ll Be Evaluated On
 
 - **Next.js**: App routing, dynamic routes, API route usage
 - **API Integration**: Using Replicate API correctly (based on documentation)
@@ -24,7 +24,7 @@ This assignment is designed to test your **Next.js architecture**, **state handl
 
 ---
 
-## 💻 Key Features to Build
+## Key Features to Build
 
 ### 1. Model Explorer Page
 
@@ -55,7 +55,7 @@ Example : Flux Schnell, Flux Dev, SDXL,   https://replicate.com/collections/text
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 - **Framework**: Next.js  (App Router)
 - **State**: (your choice)
@@ -64,26 +64,26 @@ Example : Flux Schnell, Flux Dev, SDXL,   https://replicate.com/collections/text
 
 ---
 
-## 📘 Reference Materials
+##  Reference Materials
 
 - Replicate Docs: https://replicate.com/docs
 - Sample model: https://replicate.com/stability-ai/sdxl
 
 ---
 
-## 📂 Deliverables
+##  Deliverables
 
 - **GitHub Repo**: Well-structured project with code and `README.md`
 - **.env.example**: Placeholder for the Replicate token
 - **README**: Must include setup steps, decisions made, and screenshots (or Loom video demo)
 - Deployment URL (vercel)
 - **Figma Matching**: Follow this design file for layout and components
-👉 [Figma File](https://www.figma.com/design/0DIm3sWRI8Pl8At9ucrJz5/Assignment?node-id=0-1&t=TcLcreUT8gykaRcm-1)
+ [Figma File](https://www.figma.com/design/0DIm3sWRI8Pl8At9ucrJz5/Assignment?node-id=0-1&t=TcLcreUT8gykaRcm-1)
 
 ---
 
-## 🧪 Bonus (Optional)
+##  Bonus (Optional)
 
 - Use dynamic forms that auto-adapt to any model schema from Replicate
 - Show model inference time or status updates
-- Add loading skeleton or progress ba
+- Add loading skeleton or progress bar
