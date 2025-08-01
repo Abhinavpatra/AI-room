@@ -32,10 +32,9 @@ type AspectRatio = "1:1" | "16:9" | "9:16" | "4:3" | "3:2"
 export default function Home({ params }: PageParams) {
   console.log("AIContentGenerator component initialized");
   console.log("Params:", params);
-  
   const modelId = params?.slug?.replace("--", "/") || "flux-dev"
   console.log("Model ID from params:", modelId);
-  
+
   const [prompt, setPrompt] = useState<string>("")
   const [negativePrompt, setNegativePrompt] = useState<string>("")
   const [selectedModel, setSelectedModel] = useState<string>(modelId)
