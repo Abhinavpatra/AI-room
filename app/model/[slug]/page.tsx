@@ -9,7 +9,6 @@ import axios from "axios";
 interface Model {
   id: string
   name: string
-  icon: string
   category: string
   description: string
   type: 'image' | 'video' | 'audio' | 'image-edit'
@@ -72,7 +71,6 @@ export default function Home({ params }: PageParams) {
     {
       id: "ideogram-ai/ideogram-v3-turbo",
       name: "Ideogram v3 Turbo",
-      icon: "🚀",
       category: "Fast",
       type: "image",
       description: "Turbo is the fastest and cheapest Ideogram v3. v3 creates images with stunning realism, creative designs, and consistent styles",
@@ -80,7 +78,6 @@ export default function Home({ params }: PageParams) {
     {
       id: "minimax/video-01",
       name: "MiniMax Video-01",
-      icon: "🎬",
       category: "Video",
       type: "video",
       description: "Generate 6s videos with prompts or images. (Also known as Hailuo). Use a subject reference to make a video with a character and the S2V-01 model.",
@@ -88,7 +85,6 @@ export default function Home({ params }: PageParams) {
     {
       id: "black-forest-labs/flux-kontext-pro",
       name: "FLUX Kontext Pro",
-      icon: "✨",
       category: "Pro",
       type: "image-edit",
       description: "A text-based image editing model that delivers high-quality outputs with excellent prompt following and consistent results for transforming images through natural language",
@@ -96,7 +92,6 @@ export default function Home({ params }: PageParams) {
     {
       id: "resemble-ai/chatterbox",
       name: "Resemble Chatterbox",
-      icon: "🗣️",
       category: "Audio",
       type: "audio",
       description: "Generate expressive, natural speech. Features unique emotion control, instant voice cloning from short audio, and built-in watermarking.",
@@ -104,7 +99,6 @@ export default function Home({ params }: PageParams) {
     {
       id: "luma/reframe-video",
       name: "Luma Reframe Video",
-      icon: "📱",
       category: "Video",
       type: "video",
       description: "Change the aspect ratio of any video up to 30 seconds long, outputs will be 720p",
@@ -112,7 +106,6 @@ export default function Home({ params }: PageParams) {
     {
       id: "google/imagen-4",
       name: "Google Imagen 4",
-      icon: "🔍",
       category: "Quality",
       type: "image",
       description: "Google's Imagen 4 flagship model",
@@ -431,9 +424,6 @@ export default function Home({ params }: PageParams) {
               </Link>
               <div className="w-px h-6 bg-white/[0.08]"></div>
               <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                  <span className="text-sm">{currentModel.icon}</span>
-                </div>
                 <div>
                   <h1 className="text-lg font-semibold tracking-tight">{currentModel.name}</h1>
                   <p className="text-xs text-white/60">{currentModel.category} Model</p>
@@ -452,7 +442,6 @@ export default function Home({ params }: PageParams) {
                   }`}
                   title={model.name}
                 >
-                  {model.icon}
                 </Link>
               ))}
             </div>
@@ -465,9 +454,6 @@ export default function Home({ params }: PageParams) {
         <div className="mb-8">
           <div className="bg-white/[0.02] border border-white/[0.08] rounded-2xl p-6 backdrop-blur-sm">
             <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center text-lg">
-                {currentModel.icon}
-              </div>
               <div className="flex-1">
                 <h2 className="text-xl font-semibold mb-2">{currentModel.name}</h2>
                 <p className="text-white/70 leading-relaxed">{currentModel.description}</p>
@@ -501,7 +487,6 @@ export default function Home({ params }: PageParams) {
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-2">
-                          <span className="text-sm">{model.icon}</span>
                           <span className="text-sm font-medium">{model.name}</span>
                         </div>
                         <span className="text-xs px-2 py-1 bg-white/[0.08] rounded-full">{model.category}</span>
